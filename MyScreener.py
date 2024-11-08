@@ -46,7 +46,6 @@ class MyScreener:
         ])
         return filted
         
-
     def get_day_gainers(self):
         self.screener.set_predefined_body("day_gainers")
         return self.parse()
