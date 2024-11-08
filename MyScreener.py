@@ -27,20 +27,18 @@ class MyScreener:
         quotes = self.screener.response["quotes"]
         filted = pd.DataFrame([
         {
-            'symbol': quote['symbol'],
-            'shortName': quote['shortName'],
-            'regularMarketPrice': quote['regularMarketPrice'],
-            'regularMarketChange': quote['regularMarketChange'],
-            'regularMarketChangePercent': quote['regularMarketChangePercent'],
-            'regularMarketVolume': quote['regularMarketVolume'],
-            'averageDailyVolume3Month': quote['averageDailyVolume3Month'],
-            'averageDailyVolume10Day': quote['averageDailyVolume10Day'],
-            'fiftyTwoWeekHigh': quote['fiftyTwoWeekHigh'],
-            'fiftyTwoWeekLow': quote['fiftyTwoWeekLow'],
-            'fiftyDayAverage': quote['fiftyDayAverage'],
-            'twoHundredDayAverage': quote['twoHundredDayAverage'],
-            'marketCap': quote['marketCap'],
-            'averageAnalystRating': quote['averageAnalystRating']
+            'Symbol': quote['symbol'],
+            'Name': quote['shortName'],
+            'Price': quote['regularMarketPrice'],
+            'Market Change': quote['regularMarketChange'],
+            'Market Change %': quote['regularMarketChangePercent'],
+            'Market Volume': quote['regularMarketVolume'],
+            '52 week high': quote['fiftyTwoWeekHigh'],
+            '52 week low': quote['fiftyTwoWeekLow'],
+            '50 Average': quote['fiftyDayAverage'],
+            '200 Average': quote['twoHundredDayAverage'],
+            'Market Cap': quote['marketCap'],
+            'Analyst Rating': quote['averageAnalystRating']
         }
             for quote in quotes
         ])
