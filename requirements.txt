@@ -1,3 +1,6 @@
-streamlit==1.39.0
-pandas==2.1.1
-yfinance==0.2.31
+pandas
+requests
+jax
+streamlit
+pandas
+yfinance
