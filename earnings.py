@@ -3,8 +3,6 @@ import requests
 import pandas as pd
 import json
 
-API = "QMTFAYRCOARSECP2"
-
 class MyEarnings():
     
     def __init__(self):
